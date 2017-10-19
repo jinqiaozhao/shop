@@ -1,0 +1,75 @@
+
+.footer{
+  position: fixed;
+  bottom:0;
+  width: 7.5rem;
+  height: 0.98rem;
+  display: flex;
+  background-color: #000000;
+  z-index: 4;
+  .navItem-warp{
+    flex: 1;
+    text-align: center;
+    height: 0.98rem;
+    color: #a4a4a4;
+    .navItem{
+      height: inherit;
+      position: relative;
+      display: block;
+      font-size: 0;
+      background-size: auto 0.42rem;
+      background-position: center 0.15rem;
+      background-repeat: no-repeat;
+      &.footer-nav0{
+        background-image: url("../../../assets/foot/all2.png");
+        &.footer-nav0.footer-select{
+          background-image: url("../../../assets/foot/all1.png")  ;
+        }
+      }
+      &.footer-nav1{
+        background-image: url("../../../assets/foot/new2.png") ;
+        &.footer-nav1.footer-select{
+          background-image: url("../../../assets/foot/new1.png") ;
+        }
+      }
+      &.footer-nav2{
+        background-image: url("../../../assets/foot/my2.png") ;
+        &.footer-nav2.footer-select{
+          background-image: url("../../../assets/foot/my1.png") ;
+        }
+      }
+      &.footer-nav3{
+        background-image: url("../../../assets/foot/car2.png") ;
+        &.footer-nav3.footer-select{
+          background-image: url("../../../assets/foot/car1.png") ;
+        }
+      }
+        .footer-text{
+          position: absolute;
+          bottom: 0.08rem;
+          font-size: 0.22rem;
+        }
+      &.footer-select{
+        color:#fff;
+      }
+      .car-number{
+        background-color: #EB5A5A;
+        display: inline-block;
+        border-radius: 0.15rem;
+        line-height: 0.30rem;
+        padding: 0 0.05rem;
+        font-size: 12px;
+        height: 0.3rem;
+        min-width: 0.30rem;
+        _width: 0.3rem;
+        color: #ffffff;
+        position: absolute;
+        top: 0.1rem;
+        margin-left: 0.05rem;
+      }
+    }
+
+  }
+
+
+}

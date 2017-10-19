@@ -1,0 +1,127 @@
+header{
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding: 0 0.35rem;
+  font-family:PingFangSC-Regular;
+  font-size:0;
+  color:#222222;
+  letter-spacing:0px;
+  text-align:left;
+  position: relative;
+  background-color: #ffffff;
+  .title-text{
+    font-family:PingFangSC-Regular;
+    font-size:0.3rem;
+    color:#222222;
+    letter-spacing:0px;
+    text-align:left;
+  }
+  .price-warp{
+    right: 0.35rem;
+    font-size: 0;
+    >span{
+      vertical-align: middle;
+    }
+    .symbol{
+      font-family:PingFangSC-Regular;
+      font-size:0.24rem;
+      color:#222222;
+      letter-spacing:0px;
+      text-align:left;
+    }
+    .val{
+      font-family:PingFangSC-Regular;
+      font-size:0.3rem;
+      color:#222222;
+      letter-spacing:0px;
+      text-align:left;
+    }
+  }
+}
+section{
+  background-color: #ECECEC;
+  min-height: 5rem;
+  _height:5rem;
+  border-top: 1px solid #e3e3e3;
+  .div-pay{
+    height: 0.2rem;
+    background-color: #ECECEC;
+  }
+  >div{
+    padding-left: 0.35rem;
+  background-color: #ffffff;
+    border-bottom:1px solid #e3e3e3;
+    height: 1rem;
+    font-size: 0;
+    line-height: 1rem;
+    position: relative;
+    >label{
+      font-size: 0;
+      width: 0.4rem;
+      height: 0.4rem;
+     right: 0.35rem;
+      >*{
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      input{
+        opacity: 0;
+          z-index: 4;
+        &:checked~img{
+          &:first-of-type{
+            display: none;
+          }
+          &:nth-of-type(2){
+            display: inline-block;
+          }
+        }
+      }
+      img{
+          &:first-of-type{
+            display: inline-block;
+          }
+        &:nth-of-type(2){
+          display: none;
+        }
+      }
+    }
+    >img{
+     height: 0.49rem;
+      vertical-align:middle;
+    }
+    >span{
+      margin-left: 0.1rem;
+      font-family:PingFangSC-Regular;
+      font-size:0.3rem;
+      color:#222222;
+      letter-spacing:0px;
+      vertical-align:middle;
+      text-align:left;
+    }
+
+  }
+}
+footer{
+  position: relative;
+  padding-top: 0.45rem;
+  font-size: 0;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding: 0 0.35rem;
+  text-align: center;
+  background-color: #ECECEC;
+  >button{
+    height: 0.88rem;
+    background:#fb4874;
+    border-radius:0.12rem;
+    width: 6.7rem;
+    font-family:PingFangSC-Regular;
+    font-size:0.34rem;
+    color:#ffffff;
+    letter-spacing:0px;
+    text-align:center;
+  }
+}

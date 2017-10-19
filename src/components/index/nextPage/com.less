@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.banner-img{
+  height:150px;
+  img{
+    width:100%;
+  }
+}
+.banner{
+  display:flex;
+  background: #FFFFFF;
+  >div{
+    text-align: center;
+    font-size:0.35rem;
+    flex:1;
+    padding:0.2rem 0;
+    margin:0 0.3rem;
+    line-height: 0.35rem;
+  }
+  >div.active{
+    // background: -moz-linear-gradient(left, #ace, #f96);
+    background: -webkit-linear-gradient(left, #FD3433, #FDBC84);
+    //background: -o-linear-gradient(left, #ace, #f96);
+    position:relative;
+    color: #FFF;
+  }
+  >div.active:after{
+    position:absolute;
+    bottom:0;
+    right:0.85rem;
+    content:'';
+    border-top:5px solid transparent;
+    border-left:5px solid transparent;
+    border-bottom:5px solid #fff;
+    border-right:5px solid transparent;
+
+  }
+}
+.t-pro-wrap{
+
+  >div.t-pro{
+    position:relative;
+    min-height: 100px;
+    background: #fff;
+    margin:0.15rem 0.15rem;
+    >div.collect-img{
+      >img{
+        position:absolute;
+        width:0.4rem;
+        right:0.5rem;
+        top:0;
+      }
+    }
+    >div.t-pro-content{
+      padding:0.1rem;
+      display: flex;
+      >div.t-pro-img{
+        width:25%;
+
+        >img{
+          width:100%;
+        }
+      }
+      >div.t-pro-det{
+        width:75%;
+
+        padding:0.1rem 0.2rem;
+        >div{
+          margin-bottom:6px;
+        }
+        >div.t-name{
+          font-size:0.3rem;
+          text-overflow:ellipsis;
+          overflow:hidden;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:2;
+        }
+        .t-digst{
+          color:#868585;
+          font-size:0.25rem;
+          text-overflow:ellipsis;
+          overflow:hidden;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:3;
+        }
+        .t-price{
+          color:#fb4874;
+          >span:first-child{
+            font-size:0.25rem;
+          }
+          >span:last-child{
+            font-size:0.35rem;
+          }
+        }
+      }
+    }
+    >div.gobuy{
+
+      >img{
+        position:absolute;
+        right:0.3rem;
+        bottom:0.1rem;
+        height:0.4rem;
+      }
+
+    }
+  }
+}
+#info{
+  font-weight: bolder;
+  padding:0.1rem;
+  background-color:#fff;
+  opacity:0.8;
+  width:100%;
+  text-align: center;
+  bottom:0;
+  font-size: 0.3rem;
+  color:#FB4874;
+  border-top: 2px solid #F5F5F5;
+}
