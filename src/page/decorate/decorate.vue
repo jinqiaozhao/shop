@@ -246,7 +246,7 @@
 
 </style>
 <script>
-  import headLine from 'src/components/index/headline.vue';
+  import headLine from 'src/components/index/headline0.vue';
   export default{
     components:{
       headLine

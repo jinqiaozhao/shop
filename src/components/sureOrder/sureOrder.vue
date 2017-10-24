@@ -281,12 +281,17 @@
           this.address.id = res.data[0].id;//地址id
           this.provinceName=res.data[0].provinceName;
           this.sendProduct.freight=res.data[0].freight;
-          console.log(this.sendProduct.freight)
           //运费判断;本单是否有试用商品，如果有，免运费
-          if(this.sendProduct.isGroupFour==4 || this.isFreight=='1' || this.sendProduct.isGroupFour=='1'||this.sendProduct.isGroupFour=='2'){
+          if(this.sendProduct.isGroupFour==4 || this.isfreight=='0' || this.sendProduct.isGroupFour=='1'||this.sendProduct.isGroupFour=='2'){
             this.sendProduct.freight=0.00;
+            console.log(this.sendProduct.freight)
           }else{
             this.sendProduct.freight=res.data[0].freight;
+            console.log(this.sendProduct.freight)
+            //运费判断
+           // if(this.sendProduct.totalAmount>0){
+//            } else{this.sendProduct.freight=0.00;  this.sendProduct.paidAmount=this.sendProduct.totalAmount+this.sendProduct.freight-this.point/100}
+//            this.sendProduct.paidAmount=this.sendProduct.totalAmount+this.sendProduct.freight-this.point/100-this.couponAmount;
           }
           this.sendProduct.paidAmount=this.sendProduct.totalAmount+this.sendProduct.freight-this.point/100-this.couponAmount;
         }
@@ -338,16 +343,14 @@
             _this.sendProduct.pointsValue =_this.point?_this.point:0;
             // _this.sendProduct.paidAmount = _this.sendProduct.totalAmount + _this.sendProduct.freight ;
             iii.productId = goods[oflog].productId;
-            iii.isFreight=goods[oflog].isFreight;
-            console.log(iii.isFreight)
-            if(iii.isFreight=='1'){_this.isFreight=iii.isFreight;}
             //订单中是否含有积分商品
-            if(iii.groupType=='4' || iii.groupType=='1' || iii.groupType=='2' ){
+            if(iii.groupType=='4' || iii.groupType=='1' || iii.groupType=='2'){
               _this.sendProduct.isGroupFour=iii.groupType;
               _this.sendProduct.freight=0.00;
               _this.sendProduct.paidAmount=_this.sendProduct.totalAmount+_this.sendProduct.freight-_this.point/100-_this.couponAmount;
+              console.log( _this.sendProduct.freight)
             }else{
-                if(_this.sendProduct.isGroupFour=='1' || _this.sendProduct.isGroupFour=='4'||_this.sendProduct.isGroupFour=='2' || _this.isFreight=='1'){
+                if(_this.sendProduct.isGroupFour=='1' || _this.sendProduct.isGroupFour=='4'||_this.sendProduct.isGroupFour=='2'){
                   _this.sendProduct.freight=0.00;
                   _this.sendProduct.paidAmount=_this.sendProduct.totalAmount+_this.sendProduct.freight+_this.sendProduct.freight-_this.point/100-_this.couponAmount;
                 }else{
@@ -382,7 +385,7 @@
             _this.sendProduct.isGroupFour=iii.groupType;
             _this.sendProduct.freight=0.00;
             _this.sendProduct.paidAmount=_this.sendProduct.totalAmount+_this.sendProduct.freight-_this.point/100-_this.couponAmount;
-            this.isFreight=iii.isFreight;
+            console.log( _this.sendProduct.freight)
           }else{
 //            if(_this.sendProduct.totalAmount>0){
             _this.sendProduct.paidAmount=_this.sendProduct.totalAmount+_this.sendProduct.freight-_this.point/100-_this.couponAmount//重新计算总价
@@ -394,6 +397,8 @@
           _this.sendProduct.items.push(iii);
         });
         // console.log(_this.sendProduct.totalAmount+"1")
+
+
       }
       this.getAjax(this.url.listUserOrderCoupon,{},(res)=>{
         for(var i=0;i<res.data.length;i++){
@@ -423,6 +428,7 @@
         this.sendProduct.couponId=val;
         var couponWrap=document.getElementById('couponWrap');
         if(couponWrap){ couponWrap.className='animated bounceOutDown'}
+//        console.log(val);
         if(val=="0"){
           this.pickedText="不使用优惠"
           this.couponAmount='0';

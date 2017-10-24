@@ -71,7 +71,10 @@
                 if (this.status == '0') {
                   //  willSendData['mobile'] = this.phone;
                   //willSendData['inputpassword'] = this.password;
-                  willSendData['mobile'] = this.phone;
+                  willSendData['m' +
+                  '' +
+                  '' +
+                  'obile'] = this.phone;
                     willSendData['authCode'] = this.codeCheck;
                     willSendData['password'] = this.inputpassword;
                   //  willSendData['openId'] = m$.sessionStores.get('openId')? m$.sessionStores.get('openId'):'';

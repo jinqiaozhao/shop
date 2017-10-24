@@ -1,33 +1,3 @@
-.check-img{
-  width: 0.42rem;
-  height: 0.42rem;
-  padding: .01rem;
-  .item-checkbox{
-    z-index: 4;
-    opacity: 0;
-    &:checked~.not-checked{
-      display: none;
-    }
-    &:checked~.is-checked{
-      display: inline-block;
-    }
-  }
-  .not-checked{
-    z-index: 2;
-  }
-  .is-checked{
-    z-index: 3;
-    display: none;
-  }
-}
-.check-img>*{
-  width: 0.4rem;
-  height: 0.4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .product-car-foot{
   height: 1.14rem;
   width: 100%;
@@ -92,7 +62,7 @@
 }
 .product-select-warp{
   background:rgba(0,0,0,0.10);
-  //margin-bottom: 1.24rem;
+  margin-bottom: 1.24rem;
   .all-select-item{
     box-sizing: border-box;
     background-color: #ffffff;

@@ -1,7 +1,7 @@
 <template>
   <div class="phone">
     <div class="phone-banner">
-      <img src="http://ovn5haih3.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E6%95%B0%E7%A0%81banner.png">
+      <img src="http://ovn5haih3.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E6%95%B0%E7%A0%81banner.jpg">
     </div>
     <div class="banner"><img src="http://ovn5haih3.bkt.clouddn.com/%E4%B8%8A%E6%96%B0%E5%93%81.png" /></div>
     <div class="OvO"></div>

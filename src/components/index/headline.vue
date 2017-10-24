@@ -41,11 +41,12 @@
     created(){
       // console.log(this.navData)
       this.hBanner();
+      // var box=document.getElementById('headLine');
       var n_wrap=document.getElementById('n_wrap');
       var sum=-25;
       var int=setInterval(function () {
         if(!this.n_wrap){ clearInterval(int)}
-        if(this.n_wrap){this.n_wrap.style.webkitTransform="translate3d(0,"+sum+"px"+",0)"}
+        this.n_wrap.style.webkitTransform="translate3d(0,"+sum+"px"+",0)"
         sum+=-25;
         if(sum<-25){
           sum=0;

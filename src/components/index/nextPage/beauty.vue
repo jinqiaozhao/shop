@@ -1,6 +1,6 @@
 <template>
   <div class="eight">
-    <div class="banner01"><img src="http://ovn5haih3.bkt.clouddn.com/cosmeticBanner.jpg"></div>
+    <div class="banner01"><img src="http://ovn5haih3.bkt.clouddn.com/%E6%BD%AE%E5%A6%86%E4%B8%BB%E4%B9%89.jpg"></div>
     <div class="banner">
       <div  class="active"@click="searchPro(0,$event)">迪奥</div>
       <div @click="searchPro(1,$event)">兰蔻</div>
@@ -231,6 +231,7 @@
       margin: .2rem .1rem 0 .1rem;
       position: relative;
       background-color: #FFF;
+      height:4.9rem;
       .commodity-img{
         width: 3.51rem;height: 3.5rem;
         img{max-height: 100%;}

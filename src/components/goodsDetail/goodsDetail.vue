@@ -212,20 +212,21 @@
     <div id='buy-button-2' v-if="(type == '0' ||type == '2' || type == '3')&&isInstructions" class="po-bottom">
       <!--<div :class='{"button-active":0}' @click="goCar()" v-if="type != '2'">加入购物车</div>-->
       <div class="bottom_banner" @click="$router.push('/index')">
-        <img src="../../assets/home.png"  class="bottom_icon">
-        <p  class="bottom_icon_text" >首页</p>
+        <img class="one" src="../../assets/home.png" style="position: absolute;left:21px;width:20px;top:3px;">
+        <p class="text" style="font-size:0.1rem;line-height:58px;">首页</p>
       </div>
       <div class="bottom_banner" @click="goSer()">
-        <img  src="../../assets/servers.png"  class="bottom_icon">
-        <p  class="bottom_icon_text" >客服</p>
+        <img class="one" src="../../assets/servers.png" style="position: absolute;left:21px;width:20px;top:3px;">
+        <p class="text" style="font-size:0.1rem;line-height:58px;">客服</p>
       </div>
 
       <div class="bottom_banner" @click="collect(productData)">
-      	<img src="../../assets/collect03.png" alt=""  class="bottom_icon">
-        <img src="../../assets/collect03.png" alt=""  v-if="isCollect=='1'" class="bottom_icon">
-        <img src="../../assets/collect02.png" alt=""  v-if="isCollect=='0' " class="bottom_icon">
-        <div  v-if="isCollect=='1 '"  class="bottom_icon_text">收藏</div>
-        <div  v-if="isCollect=='0'"  class="bottom_icon_text">已收藏</div>
+      	<img src="../../assets/collect03.png" alt="" style="position: absolute;left:22px;width:20px; top:3px;">
+      	<div style="font-size:0.1rem;line-height:58px;">收藏</div>
+        <img src="../../assets/collect03.png" alt="" style="position: absolute;left:22px;width:20px; top:3px;" v-if="isCollect=='1'">
+        <img src="../../assets/collect02.png" alt="" style="position: absolute;left:22px;width:20px;top:3px;" v-if="isCollect=='0' ">
+        <div style="font-size:0.1rem;line-height:58px;" v-if="isCollect=='1 '">收藏</div>
+        <div style="font-size:0.1rem;line-height:58px;" v-if="isCollect=='0'">已收藏</div>
       </div>
       <div :class='{"button-active":0}' @click="goCar()">
          加入购物车
@@ -254,19 +255,7 @@
 </template>
 <style lang="less" scoped>
   @import "bounce";
-  .bottom_icon{
-    position: absolute;
-    left:21px;
-    width:25px;
-    top:3px;
-  }
-  .bottom_icon_text{
-    font-size:0.1rem;
-    position:absolute;
-    bottom:-18px;
-    width:100%;
-    text-align: center;
-  }
+
   .gomain{top: 30%;}
   .nogomain{top:100%}
   .specification{
@@ -1296,7 +1285,6 @@
           ii.businessName = res.data && res.data.businessName ? res.data.businessName : '';//发货商户
           ii.categoryId=res.data.categoryId;
           ii.groupType=res.data.groupType;
-        ii.isFreight=res.data.isFreight;
           this.productData = ii;
           this.type = (res.data.groupType >= 1 ? res.data.groupType : 0);
     //获取分类id
@@ -1599,6 +1587,16 @@ if(this.$route.name=='goodsDetail'){
   }
 },
     created () {
+      //获取试用次数
+
+
+//      var isSli=m$.sessionStores.get('sliSus');
+//      if(isSli){
+//       // 已经授权
+//        m$.sessionStores.remove('sliSus')
+//      }else{
+//        this.getShareWxUserAuthUrl();
+//      }
       var url=window.location.href;
       var n=url.indexOf('uid');
       if(n>0){
@@ -1610,6 +1608,20 @@ if(this.$route.name=='goodsDetail'){
       m$.scroll(function () {
         return null;
       });
+      // var tt = new Date(this.time);
+      // var othis = this;
+      // setInterval(function () {
+      //   if (othis.setTimes == 0) {
+      //     othis.setTimes = 100
+      //   }
+      //   othis.setTimes--
+      // }, 10);
+      // setInterval(function () {
+      //   if (othis.second == 0) {
+      //     othis.second = 10
+      //   }
+      //   othis.second--
+      // }, 1000);
       this.getCarNumber();
       this.getType();
       this.getData();

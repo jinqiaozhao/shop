@@ -307,10 +307,18 @@ export default new Router({
       name:'beauty',
       component:components.beauty
     },{
-      path:'/comActive/:id',//美妆
-      name:'comActive',
-      component:components.comActive
+      path:'/information/:id',
+      name:'information',
+      component:components.information
     },{
+      path:'/aftersales/:id',
+      name:'aftersales',
+      component:components.aftersales
+    },{
+  path:'/afterSale',
+    name:'afterSale',
+    component:components.afterSale
+},{
       path:'/questionnaire',//问卷
       name:'questionnaire',
       component:components.questionnaire

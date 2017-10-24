@@ -34,8 +34,8 @@ var data={
         orderUrl:'/productorder/getOrderShopVo',//订单列表
         getProductVoByTypeUrl:'/product/getProductVoByType',//根据分类查询商品列表
           getProductDetailShopVoUrl:'/product/getProductDetailShopVo',//用户端-查询商品详情
-       deleteCartUrl:'/cart/deleteCart',//删除购物车
-        getCartVoUrl:'/cart/getCartVoNew',//获取购物车
+          deleteCartUrl:'/cart/deleteCart',//删除购物车
+          getCartVoUrl:'/cart/getCartVoNew',//获取购物车
         //getCartVoUrl:'/cart/getCartVo',//获取购物车
           updateCartUrl:'/cart/updateCart',//修好购物车
         saveCartUrl:'/cart/saveCart',//添加购物车
@@ -52,8 +52,8 @@ var data={
         getProductGroupShopVo:'/productgroup/getProductGroupShopVo',//用户端-秒杀&特价（商品组列表
         getNews:'/News/getNews',
         getProductGroupDetailShopVoById:'/productgroup/getProductGroupDetailShopVoById',//用户端- 秒杀&特价 根据活动组id查询商品组明细
-        getGroupBannerDate:'/productgroup/getGroupBannerDate',//miansha
-
+        getGroupBannerDate:'/productgroup/getGroupBannerDate',//
+        selectQuestionnaire:'/questionnaire/selectQuestionnaire',//获取调查问卷
       },
     img:{
       product:[
@@ -241,8 +241,8 @@ var data={
         ]},
         {name:'已完成',url:[//3
           //{text:'评价',val:3}
-          //{text:'评价晒单',val:5},
-          // {text:'再次购买',val:6}
+          {text:'申请售后',val:5},
+          {text:'评价晒单',val:6}
         ]},
         {name:'已取消',url:[//4
         ]},

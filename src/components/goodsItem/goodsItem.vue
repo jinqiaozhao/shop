@@ -365,8 +365,15 @@
       ii.id = '';
       this.nav.unshift(ii);
       var wrap=document.getElementsByClassName('swiperWrapper')
-     // console.log(wrap)
-      if(wrap.length>0){wrap.style.width=this.nav.length*1+'rem';}
+      wrap.style.width=this.nav.length*1+'rem';
+
+//    setTimeout(function () {
+//      var swipe2 = new Swiper('#goods-type-nav .swiper-container', {
+//        // autoplay: 2500,
+//        slidesPerView: 5,
+//        spaceBetween: 0,
+//      });
+//    }, 100)
     });
       //获取商品列表
       var othis=this;

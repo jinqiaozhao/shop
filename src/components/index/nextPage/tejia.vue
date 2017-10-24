@@ -4,9 +4,11 @@
       <img src="../../../assets/indexB/banner-tejia.png" alt="" >
     </div>
     <div class="banner">
-      <div  :class="i==0?'active':''"@click="searchPro(i,$event)" v-for="(v,i) in groupType2" v-if="i<3"> {{v.name}}</div>
+      <div  :class="i==0?'active':''"@click="searchPro(i,$event)" v-for="(v,i) in groupType2" v-if="i<3"></div>
     </div>
-
+    <div style="  font-size:.4rem;position:absolute;top:3rem;left: .8rem" @click="searchPro(6)">日化</div>
+    <div style="  font-size:.4rem;position:absolute;top:3rem;left: 3.2rem" @click="searchPro(5)">食品</div>
+    <div style="  font-size:.4rem;position:absolute;top:3rem;;left: 5.8rem" @click="searchPro(1)">数码</div>
     <div class="t-pro-wrap">
       <div class="t-pro" v-for="(v,i) in productData">
         <!--<div class="collect-img">-->
@@ -49,15 +51,15 @@
         var div=e.target;
         console.log(this.groupType2)
         if(i==0){
-         this.productData=this.groupType2[i].detailVos
+         this.productData=this.groupType2[6].detailVos
           div.nextElementSibling.className='';
           div.nextElementSibling.nextElementSibling.className='';
         }else if(i==1){
-          this.productData=this.groupType2[i].detailVos
+          this.productData=this.groupType2[5].detailVos
           div.nextElementSibling.className='';
           div.previousElementSibling.className='';
         }else{
-          this.productData=this.groupType2[i].detailVos
+          this.productData=this.groupType2[1].detailVos
           div.previousElementSibling.className='';
           div.previousElementSibling.previousElementSibling.className='';
         }

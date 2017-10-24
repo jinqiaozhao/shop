@@ -35,7 +35,7 @@
       <div class="comspace"></div>
       <pattern-a></pattern-a>
       <div class="banner-love">
-        <img src="http://ovn5haih3.bkt.clouddn.com/cosmeticIndexBanner.jpg" @click="$router.push('/beauty')"/>
+        <img src="http://ovn5haih3.bkt.clouddn.com/%E6%B2%A1%E5%A6%86%E4%B8%96%E7%95%8C.png" @click="$router.push('/beauty')"/>
         <img src="../../assets/indexB/Boutique.png" />
       </div>
       <pattern-b></pattern-b>
@@ -113,16 +113,15 @@
         	<router-link to="/decoIndex" tag="div" class="rou_link_dec">
     		</router-link>
         </div>-->
-      <jump-upMZ v-if="isJump"></jump-upMZ>
+      <jump-up v-if="isJump"></jump-up>
     </div>
 </template>
 <script type="text/javascript">
-    import jumpUp from 'src/components/com/jump/jumpup.vue';
-    import jumpUpMZ from 'src/components/com/jump/jumpUpMZ.vue';
+    import jumpUp from 'src/components/com/jupm/jumpup.vue';
     import comSearch from 'src/components/com/comSearch.vue';
     import indexNav from 'src/components/index/indexNav.vue';
     import headLine from 'src/components/index/headline.vue';
-    import indexList from 'src/components/index/indexListCosmetic.vue';
+    import indexList from 'src/components/index/indexList3.vue';
     import indexSeckill from 'src/components/index/indexSeckill.vue';
     import block from 'src/components/index/block.vue';
     import recommend from 'src/components/index/recommend.vue';
@@ -144,7 +143,7 @@
             }
         },
         components:{
-            /*credits,*/comSearch,indexNav,indexList,indexSeckill,timeWarp,comFooter,headLine,block,recommend,patternA,patternB,jumpUp,jumpUpMZ,
+            /*credits,*/comSearch,indexNav,indexList,indexSeckill,timeWarp,comFooter,headLine,block,recommend,patternA,patternB,jumpUp,
         },
       beforeCreate(){
         if(m$.sessionStores.get('authWXRegistLogin')){

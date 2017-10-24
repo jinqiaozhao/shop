@@ -41,7 +41,7 @@ import tongueTip from 'src/components/index/nextPage/tongueTip.vue'
 import afternoonFoods from 'src/components/index/nextPage/afternoonFoods.vue'
 import globalQuantity from 'src/components/index/nextPage/globalQuantity.vue'
 import tea from 'src/components/index/nextPage/tea.vue'
-import productCar from 'src/components/productCar/productCar0.vue'
+import productCar from 'src/components/productCar/productCar.vue'
 import orderList from 'src/components/orderList/orderList.vue'
 import orderDetail from 'src/components/orderDetail/orderDetail.vue'
 import goPay from 'src/components/goPay/goPay.vue'
@@ -52,12 +52,14 @@ import goodsDetail from 'src/components/goodsDetail/goodsDetail.vue'
 import goodsItem from 'src/components/goodsItem/goodsItem.vue'
 import decorateOrder from 'src/components/decorateOrder/decorateOrder.vue'
 import today from 'src/components/today/today.vue'
-import comActive from 'src/components/today/comActive.vue'
 import paySuccess from 'src/page/paySuccess.vue'
 import integral from 'src/page/integral/integral_index.vue'
 import integralHelp from 'src/components/integral/integralHelp.vue'
 import apply from 'src/page/integral/apply.vue'
 import logistics from 'src/components/orderEvaluate/logistics.vue'
+import aftersales from 'src/components/afterSale/after-sales.vue'//售后
+import afterSale from 'src/components/afterSale/afterSale.vue'//售后
+import information from 'src/components/afterSale/information.vue'
 //jinqiao_add
 import findDecCom from 'src/components/decorate/find_dec_com.vue'
 import decoIndex from 'src/components/decorate/deco_index.vue'
@@ -77,15 +79,13 @@ import supervisor from 'src/components/decorate/supervisor.vue'
 import furniture from 'src/components/decorate/furniture.vue'
 import stock from 'src/components/decorate/stock.vue'
 import classify from 'src/components/com/classify.vue'
-
-import questionnaire
-
-
-  from 'src/components/com/classify.vue'
+import questionnaire from 'src/page/questionnaire/questionnaire.vue'
 
 export default {
   questionnaire,
-  comActive,
+  afterSale,
+  information,
+  aftersales,
   beauty,
   setpage,
   setpersonage,

@@ -12,6 +12,7 @@
       <div class="back" v-if='oindex==1'><img src="http://ovn5haih3.bkt.clouddn.com/%E6%88%B7%E5%A4%96%E8%81%9A%E4%BC%9A.png"></div>
       <div class="back" v-if='oindex==2'><img src="http://ovn5haih3.bkt.clouddn.com/%E5%B0%8F%E8%B5%84%E6%A0%BC%E8%B0%83.png"></div>
       <div class="back" v-if='oindex==3'><img src="http://ovn5haih3.bkt.clouddn.com/%E9%85%92%E5%BA%97%E5%BF%85%E5%A4%87.png"></div>
+
      <!-- <div class="back" v-if='oindex==0'><img src="http://ovn5haih3.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E6%9C%80%E6%96%B0%E9%A3%8E%E6%A0%BC1.png"></div>
       <div class="back" v-if='oindex==1'><img src="http://ovn5haih3.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E6%9C%80%E6%96%B0%E9%A3%8E%E6%A0%BC2.png"></div>
       <div class="back" v-if='oindex==2'><img src="http://ovn5haih3.bkt.clouddn.com/%E9%A6%96%E9%A1%B5%E6%9C%80%E6%96%B0%E9%A3%8E%E6%A0%BC3.png"></div>

@@ -77,8 +77,9 @@
 
       },
       itemOperation(orderId, operaionId, nitem,e){
-//      console.log(nitem);
-//      return;
+     //console.log(nitem);
+      //  console.log(operaionId)
+    // return;
         if (operaionId == 1) {
           //window.location.href = (`#/orderDetail/${nitem.id}`);
           var arr = [];
@@ -106,6 +107,7 @@
             }
           })
         }else if(operaionId == 2){
+          console.log(operaionId)
             //确认收货
           this.postAjax(this.sData.url.confirmRecevied, {orderId: orderId}, (res) => {
             if (res.code = 200) {
@@ -119,10 +121,12 @@
             }
           })
         }else if(operaionId == 3){
-          window.location.href=(`#/orderEvaluate/${nitem.id}`)
+          this.$router.push=(`#/orderEvaluate/${nitem.id}`)
         }else if(operaionId == 4){
-          window.location.href=(`#/logistics/${nitem.id}`)
+          this.$router.push=(`#/logistics/${nitem.id}`)
         }else if(operaionId == 5){
+          this.$router.push(`/information/${nitem.id}`)
+        }else if(operaionId == 6){
           this.$router.push(`/goodsDetail/`)
         }
       },
