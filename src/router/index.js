@@ -323,6 +323,10 @@ export default new Router({
       name:'questionnaire',
       component:components.questionnaire
     },{
+      path:'/Redpacket',//抽奖页面
+      name:'Redpacket',
+      component:components.Redpacket
+    },{
       path:'*',
       redirect:'/index'
     }

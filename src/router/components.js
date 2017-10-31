@@ -80,8 +80,10 @@ import furniture from 'src/components/decorate/furniture.vue'
 import stock from 'src/components/decorate/stock.vue'
 import classify from 'src/components/com/classify.vue'
 import questionnaire from 'src/page/questionnaire/questionnaire.vue'
+import Redpacket from 'src/page/index/Redpacket.vue'
 
 export default {
+  Redpacket,
   questionnaire,
   afterSale,
   information,

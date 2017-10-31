@@ -54,6 +54,9 @@ var data={
         getProductGroupDetailShopVoById:'/productgroup/getProductGroupDetailShopVoById',//用户端- 秒杀&特价 根据活动组id查询商品组明细
         getGroupBannerDate:'/productgroup/getGroupBannerDate',//
         selectQuestionnaire:'/questionnaire/selectQuestionnaire',//获取调查问卷
+        saveQuestionAnswer:'/questionnaire/saveQuestionAnswer',//提交调查问卷
+        addPointsById: '/Points/addPointsById',//转盘积分数值
+        sendRedenvelope: '/questionnaire/sendRedenvelope',//转盘一元红包
       },
     img:{
       product:[

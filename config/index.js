@@ -30,8 +30,8 @@ module.exports = {
     //本地调试设置代理
     proxyTable: {
       '*': {
-          target: 'http://www.bbyumall.com',
-        //target: 'http://www.bbyumall.xyz/',
+        // target: 'http://www.bbyumall.com',
+        target: 'http://www.bbyumall.xyz/',
         filter: function (pathname, req) {
           return pathname.match('^/mall-web-shop') && (req.method === 'GET' || req.method === 'POST')
         }

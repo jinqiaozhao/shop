@@ -41,6 +41,8 @@ function myAjax(option) {
     return;
   }
   switch (true){
+
+
     // // token 失效
     // case data.msg === "error.access.session.invalid" :
     //   store.commit(LOADER_SET_AJAX_NUM, 0); // 清空请求数
